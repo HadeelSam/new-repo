@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test.SomeTest" time="0.008" tests="6" errors="0" skipped="0" failures="0">
+<testsuite name="test.SomeTest" time="0.007" tests="6" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="15.0.2+7-27"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-15.0.2.jdk/Contents/Home/lib"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/alphaapps/Desktop/simple-maven-project-with-tests-master"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/alphaapps/Desktop/new-repo"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -13,7 +13,7 @@
     <property name="user.country" value="GB"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/alphaapps/Desktop/simple-maven-project-with-tests-master"/>
+    <property name="user.dir" value="/Users/alphaapps/Desktop/new-repo"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="15.0.2+7-27"/>
     <property name="os.arch" value="x86_64"/>
@@ -39,7 +39,7 @@
     <property name="java.class.path" value="/Library/Java/JavaVirtualMachines/apache-maven-3.8.2/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="15"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -f /Users/alphaapps/Desktop/simple-maven-project-with-tests-master/pom.xml"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -f /Users/alphaapps/Desktop/new-repo/pom.xml"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-15.0.2.jdk/Contents/Home"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -55,10 +55,16 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="test1" classname="test.SomeTest" time="0.007"/>
-  <testcase name="test2" classname="test.SomeTest" time="0.001"/>
+  <testcase name="test1" classname="test.SomeTest" time="0.004"/>
+  <testcase name="test2" classname="test.SomeTest" time="0.002">
+    <failure message="oops" type="java.lang.AssertionError">java.lang.AssertionError: oops
+	at org.junit.Assert.fail(Assert.java:89)
+	at test.Base.run(Base.java:35)
+	at test.SomeTest.test2(SomeTest.java:36)
+</failure>
+  </testcase>
   <testcase name="test3" classname="test.SomeTest" time="0"/>
   <testcase name="test4" classname="test.SomeTest" time="0"/>
-  <testcase name="test5" classname="test.SomeTest" time="0"/>
+  <testcase name="test5" classname="test.SomeTest" time="0.001"/>
   <testcase name="test6" classname="test.SomeTest" time="0"/>
 </testsuite>
