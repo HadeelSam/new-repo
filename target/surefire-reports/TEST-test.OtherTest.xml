@@ -55,9 +55,6 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="mytest" classname="test.OtherTest" time="1.996">
-      <requirements>
-        <requirement>10004</requirement>
-      </requirements>
+  <testcase name="mytest" classname="test.OtherTest" time="1.996" Coverage="TES-5">
 </testcase>
 </testsuite>
