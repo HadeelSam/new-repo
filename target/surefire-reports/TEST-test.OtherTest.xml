@@ -57,7 +57,7 @@
   </properties>
   <testcase name="mytest" classname="test.OtherTest" time="1.996">
       <Traceability>
-        <Issues>TES-5</Issues>
+        <Issues>10004</Issues>
       </Traceability>
 </testcase>
 </testsuite>
