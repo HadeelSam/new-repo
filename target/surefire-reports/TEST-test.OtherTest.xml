@@ -58,11 +58,14 @@
   <testcase name="mytest" classname="test.OtherTest" time="1.996" >
     <issues>
       <issue>
-      <key>TES-5</key>
-      <summary>
-      <![CDATA[ QA Story ]]>
-      </summary>
-      </issue>
-      </issues>
+       <key>TES-5</key>
+       <summary>
+       <![CDATA[ QA Story ]]>
+       </summary>
+       </issue>
+      <priority>
+        <![CDATA[ Low ]]>
+      </priority>
+    </issues>
 </testcase>
 </testsuite>
