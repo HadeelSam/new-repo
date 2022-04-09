@@ -58,7 +58,7 @@
   <testcase name="mytest" classname="test.OtherTest" time="1.996">
     <properties>
       <property name="Issues" value="TES-5"/>
-      <property name="Status" value="Draft"/>
+      <property name="Status" value="Approved"/>
       </properties>
 </testcase>
 </testsuite>
