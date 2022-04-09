@@ -59,6 +59,9 @@
     <issues>
       <issue>
       <key>TES-5</key>
+      <summary>
+      <![CDATA[ QA Story ]]>
+      </summary>
       </issue>
       </issues>
 </testcase>
