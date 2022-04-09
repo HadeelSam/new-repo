@@ -57,7 +57,7 @@
   </properties>
   <testcase name="mytest" classname="test.OtherTest" time="1.996">
     <properties>
-      <property name="Coverage (Issues)" value="TES-5"/>
+      <property name="Issues" value="TES-5"/>
       </properties>
 </testcase>
 </testsuite>
