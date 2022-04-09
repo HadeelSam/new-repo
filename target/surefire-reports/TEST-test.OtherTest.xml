@@ -56,9 +56,8 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
   <testcase name="mytest" classname="test.OtherTest" time="1.996">
-    <properties>
-      <property name="Coverage" value="TES-5"/>
-      <property name="Status" value="Approved"/>
-      </properties>
+      <requirements>
+        <requirement>TES-5</requirement>
+      </requirements>
 </testcase>
 </testsuite>
