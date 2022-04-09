@@ -56,8 +56,8 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
   <testcase name="mytest" classname="test.OtherTest" time="1.996">
-      <Traceability>
-        <Issues>10004</Issues>
-      </Traceability>
+      <requirements>
+        <requirement>10004</requirement>
+      </requirements>
 </testcase>
 </testsuite>
