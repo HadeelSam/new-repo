@@ -55,34 +55,6 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testCase id="20357633" key="TES-T246">
-    <attachments/>
-    <confluencePageLinks/>
-    <createdBy>Hadeel</createdBy>
-    <createdOn>2022-04-09 14:21:24 UTC</createdOn>
-    <customFields/>
-    <issues>
-    <issue>
-    <key>TES-5</key>
-    <summary>
-    <![CDATA[ QA Story ]]>
-    </summary>
-    </issue>
-    </issues>
-    <labels/>
-    <name><![CDATA[ test.OtherTest.mytest ]]></name>
-    <priority>
-    <![CDATA[ Normal ]]>
-    </priority>
-    <status><![CDATA[ Approved ]]></status>
-    <parameters/>
-    <testDataWrapper/>
-    <testScript type="steps">
-    <steps>
-    <step index="0">
-    <customFields/>
-    </step>
-    </steps>
-    </testScript>
-    </testCase>
+  <testcase name="mytest" classname="test.OtherTest" time="1.996" issue="TES-5">
+</testcase>
 </testsuite>
