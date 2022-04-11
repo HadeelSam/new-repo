@@ -55,9 +55,9 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="mytest" classname="test.OtherTest" time="1.996">
-    <issues>
-      <issue>10004</issue>
-    </issues>
+  <testcase name="bbbbbbbb" classname="test.OtherTest" time="1.996">
+    <priority>
+      [CDATA[ Normal ]]
+    </priority>
   </testcase>
 </testsuite>
