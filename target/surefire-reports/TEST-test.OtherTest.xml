@@ -57,7 +57,7 @@
   </properties>
   <testcase name="bbbbbbbb" classname="test.OtherTest" time="1.996">
     <priority>
-      [CDATA[ High ]]
+     { [CDATA[ High ]]}
     </priority>
   </testcase>
 </testsuite>
