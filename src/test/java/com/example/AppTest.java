@@ -1,28 +1,6 @@
-/*
- * The MIT License
- *
- * Copyright 2016 CloudBees, Inc.
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- */
+package com.example;
 
-package test;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 import org.json.JSONException;
@@ -40,11 +18,21 @@ import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.HttpServerErrorException;
 import org.springframework.web.client.RestTemplate;
 
-public class OtherTest extends Base {
-
-    @Test public void mytest() throws Exception {
+/**
+ * Unit test for simple App.
+ */
+public class AppTest 
+{
+    /**
+     * Rigorous Test :-)
+     * @throws Exception
+     */
+    @Test
+    public void SignIn_CMS_User_Successfully() throws Exception
+    {
+        //assertTrue( true );
         MultiValueMap<String, String> map = new LinkedMultiValueMap<String, String>();
-        map.add("email", "CMS@CMS.com");
+        map.add("email", "admin@admin.com");
         map.add("password", "Admin123");
 
         HttpHeaders headers = new HttpHeaders();
@@ -57,7 +45,7 @@ public class OtherTest extends Base {
         try {
             RestTemplate restTemplate = new RestTemplate();
             ResponseEntity<String> responseEntity = restTemplate.exchange(
-                    "http://localhost:3000/auth/signin", HttpMethod.POST, entity,
+                    "https://api.dev.elkaso.app/auth/signin", HttpMethod.POST, entity,
                     String.class);
 
             if (responseEntity.getStatusCode() == HttpStatus.CREATED) {
@@ -77,5 +65,4 @@ public class OtherTest extends Base {
             throw new Exception(exception);
         }
     }
-
 }
