@@ -2,6 +2,8 @@ package com.example;
 
 import static org.junit.Assert.assertTrue;
 
+import com.smartbear.zephyrscale.junit.annotation.TestCase;
+
 import org.junit.Test;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -28,6 +30,7 @@ public class AppTest
      * @throws Exception
      */
     @Test
+    @TestCase(key = "JQA-T1")
     public void SignIn_CMS_User_Successfully() throws Exception
     {
         //assertTrue( true );
