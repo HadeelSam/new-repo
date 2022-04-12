@@ -2,9 +2,9 @@ package com.example;
 
 import static org.junit.Assert.assertTrue;
 
-import com.adaptavist.tm4j.junit.annotation.TestCase;
+//import com.adaptavist.tm4j.junit.annotation.TestCase;
 
-//import com.smartbear.zephyrscale.junit.annotation.TestCase;
+import com.smartbear.zephyrscale.junit.annotation.TestCase;
 
 import org.junit.Test;
 import org.json.JSONException;
