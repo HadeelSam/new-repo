@@ -3,8 +3,6 @@
   "executions" : [ {
     "source" : "com.example.AppTest.SignIn_CMS_User_Successfully",
     "result" : "Passed",
-    "testCase" : {
-      "key" : "JQA-T1"
-    }
+    "priority" : "Low"
   } ]
 }
